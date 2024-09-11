@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <script>
+                console.log(window.jQuery);
+              </script>
+    <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="" style="margin: 5rem;">
+        <h2>Student Enrollment form</h2>
+        <form id="myform" method="post" style="margin: 6rem;">
+            <div class="form-group">
+                <span><label for="id">Student Roll No.:</label> <label >
+                    </label></span>
+                <input type="text" class="form-control" id="id" placeholder="Enter Roll number of Student" onchange="getStudent()"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="name">Student Full-Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Student Full-Name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="class">Class:</label>
+                <input type="text" class="form-control" id="class" placeholder="Enter Student class"
+                    name="class">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" id="dob" placeholder="Enter Student Date of birth"
+                    name="dob"></div>
+                    <div class="form-group">
+                    <label for="add">Address:</label>
+                    <input type="text" class="form-control" id="add" placeholder="Enter Student Address"
+                        name="add">
+                </div>
+                <div class="form-group">
+              <label for="enroll-date">Enrollment Date:</label>
+              <input type="date" class="form-control" id="enroll" placeholder="Enter Enrollment Date"
+                  name="enroll-date"></div>
+
+                  <div style="display: flex; justify-content: center; gap: 5rem;">
+                    <input type="button" class="btn btn-primary" id="save" value="Save" onclick="saveData();" disabled>
+                    <input type="button" class="btn btn-primary" id="change" value="Change" onclick="changeData();" disabled>
+                    <input type="button" class="btn btn-primary" id="reset-button"  value="Reset" onclick="resetForm();" disabled>
+                    
+                </div>
+
+</body>
+</html>
